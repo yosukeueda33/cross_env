@@ -1,0 +1,8 @@
+version: '3'
+services:
+  cross_build:
+    build:
+      context: ./env
+      dockerfile: Dockerfile
+    volumes:
+      - ./mnt:/app/mnt
